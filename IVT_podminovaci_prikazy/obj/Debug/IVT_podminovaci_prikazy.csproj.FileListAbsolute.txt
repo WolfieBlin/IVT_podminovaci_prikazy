@@ -1,0 +1,10 @@
+C:\Users\ufon2\RiderProjects\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.exe
+C:\Users\ufon2\RiderProjects\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.pdb
+C:\Users\ufon2\RiderProjects\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.csprojResolveAssemblyReference.cache
+C:\Users\ufon2\RiderProjects\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.exe
+C:\Users\ufon2\RiderProjects\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.pdb
+C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.exe
+C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.pdb
+C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.exe
+C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.pdb
+C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.csprojResolveAssemblyReference.cache
