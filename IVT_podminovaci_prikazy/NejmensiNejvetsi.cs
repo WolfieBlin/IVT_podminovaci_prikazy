@@ -7,7 +7,7 @@ namespace IVT_podminovaci_prikazy
 {
     public class NejmensiNejvetsi
     {
-        public void Vypocet()
+        public static void Vypocet()
         {
             List<double> list = new List<double>();
 

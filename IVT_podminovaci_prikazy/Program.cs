@@ -39,8 +39,8 @@ namespace IVT_podminovaci_prikazy
                         trojúhelník.Vypocet();
                         break;
                     case "6":
-                        var nejmensiNejvetsi = new NejmensiNejvetsi();
-                        nejmensiNejvetsi.Vypocet();
+                        //var nejmensiNejvetsi = new NejmensiNejvetsi();
+                        NejmensiNejvetsi.Vypocet();
                         break;
                     default:
                         Console.WriteLine("Špatná volba");

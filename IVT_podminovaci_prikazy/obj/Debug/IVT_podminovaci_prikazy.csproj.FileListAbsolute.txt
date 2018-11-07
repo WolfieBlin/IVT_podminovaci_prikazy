@@ -8,3 +8,9 @@ C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT
 C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.exe
 C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.pdb
 C:\Users\vlcek.patrik\Downloads\IVT_podminovaci_prikazy-20180503T060829Z-001\IVT_podminovaci_prikazy\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.csprojResolveAssemblyReference.cache
+C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.exe
+C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0\IVT_podminovaci_prikazy\bin\Debug\IVT_podminovaci_prikazy.pdb
+C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.csprojAssemblyReference.cache
+C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.csproj.CoreCompileInputs.cache
+C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.exe
+C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0\IVT_podminovaci_prikazy\obj\Debug\IVT_podminovaci_prikazy.pdb
