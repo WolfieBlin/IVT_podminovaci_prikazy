@@ -15,7 +15,7 @@ namespace IVT_podminovaci_prikazy
             _x = test.Test();
             _y = test.Test();
 
-            if (_x < 0 && _y != 0)
+            /*if (_x < 0 && _y != 0)
             {
                 Console.WriteLine(_y < 0 ? "Bod se nachází v třetím kvadrantu" : "Bod se nachází v druhém kvadrantu");
             }
@@ -34,7 +34,32 @@ namespace IVT_podminovaci_prikazy
             if(_x == 0&& _y==0)
             {
                 Console.WriteLine("Bod se nachází v počátku soustavy");
+            }*/
+            if (_x > 0)
+            {
+                if (_y > 0)
+                {
+                    Console.WriteLine("Bod se nachází v prvním kvadrantu");
+                }
+                else
+                {
+                    Console.WriteLine("Bod se nachází ve čtvrtém kvadravnu");
+                }
             }
+            else
+            {
+                if (_y > 0)
+                {
+                    Console.WriteLine("Bod se nachází v druhém kvadrantu");
+                }
+                else
+                {
+                    Console.WriteLine("Bod se nachází ve třetím kvadravnu");
+                }
+
+            }
+
+            
         }
     }
 }
