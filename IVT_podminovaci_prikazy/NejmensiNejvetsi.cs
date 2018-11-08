@@ -5,27 +5,34 @@ using System.Linq;
 
 namespace IVT_podminovaci_prikazy
 {
-    public class NejmensiNejvetsi
+    public class NejmensiNejvetsi : Vstupy
     {
-        public static void Vypocet()
+        private double _a;
+        private double _b;
+        private double _c;
+        private double _d;
+        
+        private List<double> _list = new List<double>();
+
+        public void Vypocet()
         {
-            List<double> list = new List<double>();
+            //List<double> list = new List<double>();
 
             Console.WriteLine("Zadejte postupně 4 čísla");
-            var a = Convert.ToDouble(Console.ReadLine());
-            list.Add(a);
+            _a = Test();
+            _list.Add(_a);
 
-            var b = Convert.ToDouble(Console.ReadLine());
-            list.Add(b);
+            _b = Test();
+            _list.Add(_b);
 
-            var c = Convert.ToDouble(Console.ReadLine());
-            list.Add(c);
+            _c = Test();
+            _list.Add(_c);
 
-            var d = Convert.ToDouble(Console.ReadLine());
-            list.Add(d);
+            _d = Test();
+            _list.Add(_d);
 
-            var max = list.Max();
-            var min = list.Min();
+            var max = _list.Max();
+            var min = _list.Min();
 
             Console.WriteLine("Největší čísli je {0} a nejmenší je {1}", max.ToString(), min.ToString());
         }

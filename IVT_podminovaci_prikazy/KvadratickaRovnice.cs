@@ -3,23 +3,25 @@ using System.ComponentModel;
 
 namespace IVT_podminovaci_prikazy
 {
-    public class KvadratickaRovnice
+    public class KvadratickaRovnice : Vstupy, ILinearniRovniceVypocet
     {
+        private ILinearniRovniceVypocet _vypocet = new LinearniRovnice();
+        
         private double _a;
         private double _b;
         private double _c;
         
-        public void Vypocet()
+        public void VypocetKvadraticka()
         {
-            var test = new Vstupy();
+            //var test = new Vstupy();
             Console.WriteLine("Zadejte proměnou a , b a c podle rovnice ax2 + bx + c = 0");
-            _a = test.Test();
-            _b = test.Test();
-            _c = test.Test();
+            _a = Test();
+            _b = Test();
+            _c = Test();
             var diskriminant = _b * _b - 4 * _a * _c;
             if (_a == 0)
             {
-                Console.WriteLine("Toto není kvadratická rovnice, ale lineární");
+                VypocetKvadratickaLinearni(_b, _c);
             }
             else if (diskriminant > 0)
             {
@@ -36,6 +38,11 @@ namespace IVT_podminovaci_prikazy
             {
                 Console.WriteLine("Tato rovnice nemá řešení v R");
             }
+        }
+
+        public void VypocetKvadratickaLinearni(double a, double b)
+        {
+            _vypocet.VypocetKvadratickaLinearni(a,b);
         }
     }
 }

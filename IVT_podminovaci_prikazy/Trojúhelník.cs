@@ -3,22 +3,26 @@ using System.Data;
 
 namespace IVT_podminovaci_prikazy
 {
-    public class Trojúhelník
+    public class Trojúhelník : Vstupy
     {
-        private float _a;
-        private float _b;
-        private float _c;
+        private double _a;
+        private double _b;
+        private double _c;
 
         public void Vypocet()
         {
             Console.WriteLine("Zadejte strany a, b, c");
             
-            while (!float.TryParse(Console.ReadLine(), out _a))
+            /*while (!float.TryParse(Console.ReadLine(), out _a))
                 Console.WriteLine("Neplatné číslo, zadejte prosím znovu:");
             while (!float.TryParse(Console.ReadLine(), out _b))
                 Console.WriteLine("Neplatné číslo, zadejte prosím znovu:");
             while (!float.TryParse(Console.ReadLine(), out _c))
-                Console.WriteLine("Neplatné číslo, zadejte prosím znovu:");
+                Console.WriteLine("Neplatné číslo, zadejte prosím znovu:");*/
+            
+            _a = Test();
+            _b = Test();
+            _c = Test();
 
             if ((_a + _b) > _c && (_a + _c) > _b && (_c + _b) > _a)
             {

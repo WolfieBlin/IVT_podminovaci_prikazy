@@ -6,6 +6,7 @@
     <e p="C:\Users\ufon2\Disk Google\+++Programko\C#\Projects\IVT_podminovaci_prikazy 2,0" t="IncludeFlat">
       <e p="IVT_podminovaci_prikazy" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ILinearniRovniceVypocet.cs" t="Include" />
         <e p="IVT_podminovaci_prikazy.csproj" t="IncludeRecursive" />
         <e p="Klakulačka.cs" t="Include" />
         <e p="Kvadranty.cs" t="Include" />

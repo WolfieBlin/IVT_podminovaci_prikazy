@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ILinearniRovniceVypocet.cs" />
     <Compile Include="Klakulačka.cs" />
     <Compile Include="Kvadranty.cs" />
     <Compile Include="KvadratickaRovnice.cs" />
