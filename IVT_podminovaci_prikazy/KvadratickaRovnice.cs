@@ -11,28 +11,36 @@ namespace IVT_podminovaci_prikazy
         private double _b;
         private double _c;
         
+        private double _diskriminant;
+        
+        private double _x1;
+        private double _x2;
+        private double _x;
+        
         public void VypocetKvadraticka()
         {
-            //var test = new Vstupy();
             Console.WriteLine("Zadejte proměnou a , b a c podle rovnice ax2 + bx + c = 0");
+            
             _a = Test();
             _b = Test();
             _c = Test();
-            var diskriminant = _b * _b - 4 * _a * _c;
+            
+            _diskriminant = _b * _b - 4 * _a * _c;
+            
             if (_a == 0)
             {
-                VypocetKvadratickaLinearni(_b, _c);
+                Vypocet(_b, _c);
             }
-            else if (diskriminant > 0)
+            else if (_diskriminant > 0)
             {
-                var vysledek1 = (-_b + Math.Sqrt(diskriminant)) / 2 * _a;
-                var vysledek2 = (-_b - Math.Sqrt(diskriminant)) / 2 * _a;
-                Console.WriteLine("X1 = {0}, X2 = {1}", vysledek1.ToString(),vysledek2.ToString());
+                _x1 = (-_b + Math.Sqrt(_diskriminant)) / 2 * _a;
+                _x2 = (-_b - Math.Sqrt(_diskriminant)) / 2 * _a;
+                Console.WriteLine("X1 = {0}, X2 = {1}", _x1.ToString(),_x2.ToString());
             }
-            else if (diskriminant == 0)
+            else if (_diskriminant == 0)
             {
-                var vysledek = -_b / 2 * _a;
-                Console.WriteLine("Tato rovnice má jeden kořen: X = "+ vysledek.ToString());
+                _x = -_b / 2 * _a;
+                Console.WriteLine("Tato rovnice má jeden kořen: X = "+ _x.ToString());
             }
             else
             {
@@ -40,9 +48,9 @@ namespace IVT_podminovaci_prikazy
             }
         }
 
-        public void VypocetKvadratickaLinearni(double a, double b)
+        public void Vypocet(double a, double b)
         {
-            _vypocet.VypocetKvadratickaLinearni(a,b);
+            _vypocet.Vypocet(a,b);
         }
     }
 }

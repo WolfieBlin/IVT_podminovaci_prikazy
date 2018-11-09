@@ -7,11 +7,12 @@ namespace IVT_podminovaci_prikazy
     {
         private double _x;
         private double _y;
+        private int kvadrant;
         
         public void Vypocet()
         {
-           // var test = new Vstupy();
             Console.WriteLine("Zadejte souřadnice bodu X a Y");
+            
             _x = Test();
             _y = Test();
 
@@ -19,26 +20,27 @@ namespace IVT_podminovaci_prikazy
             {
                 if (_y > 0)
                 {
-                    Console.WriteLine("Bod se nachází v prvním kvadrantu");
+                    kvadrant = 1;
                 }
                 else
                 {
-                    Console.WriteLine("Bod se nachází ve čtvrtém kvadravnu");
+                    kvadrant = 4;
                 }
             }
             else
             {
                 if (_y > 0)
                 {
-                    Console.WriteLine("Bod se nachází v druhém kvadrantu");
+                    kvadrant = 2;
                 }
                 else
                 {
-                    Console.WriteLine("Bod se nachází ve třetím kvadravnu");
+                    kvadrant = 3;
                 }
 
             }
 
+            Console.WriteLine($"Bod se nachází v {kvadrant}. kvadrantu");
             
         }
     }

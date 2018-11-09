@@ -11,7 +11,6 @@ namespace IVT_podminovaci_prikazy
        
         public void Vypocet()
         {
-            //var test = new Vstupy();
             Console.WriteLine("Zadejte proměnou a , b podle rovnice ax + b = 0");
             
             _a = Test();
@@ -21,7 +20,7 @@ namespace IVT_podminovaci_prikazy
             Console.WriteLine("X = "+ vysledek.ToString());
         }
 
-        public void VypocetKvadratickaLinearni(double a, double b)
+        public void Vypocet(double a, double b)
         {
             var vysledek = -b / a;
             

@@ -9,8 +9,6 @@ namespace IVT_podminovaci_prikazy
         
         public void Vypocet()
         {
-                //var test = new Vstupy();
-
                 var pokracovat = true;
             
                 Console.WriteLine("Zadejte první číslo");
