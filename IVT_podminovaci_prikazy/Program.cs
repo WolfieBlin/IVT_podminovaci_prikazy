@@ -1,13 +1,16 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace IVT_podminovaci_prikazy
 {
-    internal class Program
+    internal class Program 
     {
         public static void Main(string[] args)
         {
                 var pokracovat = true;
+                bool platnaVolba;
+
 
             while (pokracovat)
             {
@@ -46,15 +49,17 @@ namespace IVT_podminovaci_prikazy
                         Console.WriteLine("Špatná volba");
                         break;
                 }
-
-                Console.WriteLine("Chcete pokračovat? [a/n]");
-                var platnaVolba = false;
+                
+                platnaVolba = false;
+                
                 while (!platnaVolba)
                 {
+                    Console.WriteLine("Chcete pokračovat? [a/n]");
+                    
                     switch (Convert.ToString(Console.ReadLine()))
                     {
                         case "a":
-                            pokracovat = true;
+                           // pokracovat = true;
                             platnaVolba = true;
                             break;
                         case "n":

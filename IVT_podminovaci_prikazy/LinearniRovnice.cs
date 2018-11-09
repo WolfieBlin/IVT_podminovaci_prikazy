@@ -8,7 +8,8 @@ namespace IVT_podminovaci_prikazy
     {
         private double _a;
         private double _b;
-       
+        private double _vysledek;
+        
         public void Vypocet()
         {
             Console.WriteLine("Zadejte proměnou a , b podle rovnice ax + b = 0");
@@ -16,18 +17,32 @@ namespace IVT_podminovaci_prikazy
             _a = Test();
             _b = Test();
 
-            var vysledek = -_b/_a;
-            Console.WriteLine("X = "+ vysledek.ToString());
+            if (_a == 0)
+            {
+                if (_b == 0)
+                {
+                    Console.WriteLine("Rovnice má nekonečno řešení");
+                }
+                else
+                {
+                    Console.WriteLine("Rovnice nemá řešení");
+                }
+            }
+            else
+            {
+                _vysledek = -_b/_a;
+                Console.WriteLine("X = "+ _vysledek.ToString());
+            }
         }
 
         public void Vypocet(double a, double b)
         {
-            var vysledek = -b / a;
+            _vysledek = -b / a;
             
             Console.WriteLine("Toto není kvadratická rovnice, ale lineární");
             Console.WriteLine("Výsledkem této lineární rovnice je");
                         
-            Console.WriteLine("X = " + vysledek.ToString());
+            Console.WriteLine("X = " + _vysledek.ToString());
         }
     }
 }

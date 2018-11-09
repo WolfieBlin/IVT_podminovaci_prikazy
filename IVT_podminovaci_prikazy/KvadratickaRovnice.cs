@@ -12,7 +12,6 @@ namespace IVT_podminovaci_prikazy
         private double _c;
         
         private double _diskriminant;
-        
         private double _x1;
         private double _x2;
         private double _x;
