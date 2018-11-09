@@ -7,7 +7,7 @@ namespace IVT_podminovaci_prikazy
     {
         private double _x;
         private double _y;
-        private int kvadrant;
+        private byte kvadrant;
         
         public void Vypocet()
         {
@@ -40,7 +40,7 @@ namespace IVT_podminovaci_prikazy
 
             }
 
-            Console.WriteLine($"Bod se nachází v {kvadrant}. kvadrantu");
+            Console.WriteLine("Bod se nachází v {0}. kvadrantu", kvadrant);
             
         }
     }
