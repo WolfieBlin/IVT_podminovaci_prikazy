@@ -3,38 +3,45 @@ using System.Runtime.InteropServices.ComTypes;
 
 namespace IVT_podminovaci_prikazy
 {
-    public class Kvadranty
+    public class Kvadranty : Vstupy
     {
         private double _x;
         private double _y;
+        private byte kvadrant;
         
         public void Vypocet()
         {
-            var test = new Vstupy();
             Console.WriteLine("Zadejte souřadnice bodu X a Y");
-            _x = test.Test();
-            _y = test.Test();
+            
+            _x = Test();
+            _y = Test();
 
-            if (_x < 0 && _y != 0)
+            if (_x > 0)
             {
-                Console.WriteLine(_y < 0 ? "Bod se nachází v třetím kvadrantu" : "Bod se nachází v druhém kvadrantu");
+                if (_y > 0)
+                {
+                    kvadrant = 1;
+                }
+                else
+                {
+                    kvadrant = 4;
+                }
             }
-             if(_y !=0 && _x >0)
+            else
             {
-                Console.WriteLine(_y < 0 ? "Bod se nachází v čtvrtém kvadrantu" : "Bod se nachází v prvním kvadrantu");
+                if (_y > 0)
+                {
+                    kvadrant = 2;
+                }
+                else
+                {
+                    kvadrant = 3;
+                }
+
             }
-            if (_x == 0 && _y != 0)
-            {
-                Console.WriteLine("Bod se nachází na ose y");
-            }
-            if(_x != 0 && _y == 0)
-            {
-                Console.WriteLine("Bod se nachází na ose x");
-            }
-            if(_x == 0&& _y==0)
-            {
-                Console.WriteLine("Bod se nachází v počátku soustavy");
-            }
+
+            Console.WriteLine("Bod se nachází v {0}. kvadrantu", kvadrant);
+            
         }
     }
 }

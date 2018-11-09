@@ -1,19 +1,22 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace IVT_podminovaci_prikazy
 {
-    internal class Program
+    internal class Program 
     {
         public static void Main(string[] args)
         {
-           
                 var pokracovat = true;
+                bool platnaVolba;
+
 
             while (pokracovat)
             {
                 Console.WriteLine("Vyberte si operaci:");
                 Console.WriteLine("1 - Lineární rovnice\n2 - Kvadratická rovnice\n3 - Kvadranty\n4 - Kalkulačka\n5 - Trojúhelník zkouška\n6 - Největší a nejmenší");
+                
                 var input = Convert.ToString(Console.ReadLine());
 
                 switch (input)
@@ -24,7 +27,7 @@ namespace IVT_podminovaci_prikazy
                         break;
                     case "2":
                         var kvadratickaRovnice = new KvadratickaRovnice();
-                        kvadratickaRovnice.Vypocet();
+                        kvadratickaRovnice.VypocetKvadraticka();
                         break;
                     case "3":
                         var kvadranty = new Kvadranty();
@@ -39,22 +42,24 @@ namespace IVT_podminovaci_prikazy
                         trojúhelník.Vypocet();
                         break;
                     case "6":
-                        //var nejmensiNejvetsi = new NejmensiNejvetsi();
-                        NejmensiNejvetsi.Vypocet();
+                        var nejmensiNejvetsi = new NejmensiNejvetsi();
+                        nejmensiNejvetsi.Vypocet();
                         break;
                     default:
                         Console.WriteLine("Špatná volba");
                         break;
                 }
-
-                Console.WriteLine("Chcete pokračovat? [a/n]");
-                var platnaVolba = false;
+                
+                platnaVolba = false;
+                
                 while (!platnaVolba)
                 {
+                    Console.WriteLine("Chcete pokračovat? [a/n]");
+                    
                     switch (Convert.ToString(Console.ReadLine()))
                     {
                         case "a":
-                            pokracovat = true;
+                           // pokracovat = true;
                             platnaVolba = true;
                             break;
                         case "n":
