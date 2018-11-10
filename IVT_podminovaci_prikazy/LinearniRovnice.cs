@@ -6,6 +6,8 @@ namespace IVT_podminovaci_prikazy
 {
     public class LinearniRovnice : Vstupy, ILinearniRovniceVypocet
     {
+        //interface se musí implementovat i do rodné classy
+        
         private double _a;
         private double _b;
         private double _vysledek;
@@ -37,6 +39,9 @@ namespace IVT_podminovaci_prikazy
 
         public void Vypocet(double a, double b)
         {
+            //metoda pro výpočet pro kvadratickou
+            //použil jsem polymorfismus, stejné označení metody ale podle vstupu se vybere která se použije
+            
             _vysledek = -b / a;
             
             Console.WriteLine("Toto není kvadratická rovnice, ale lineární");

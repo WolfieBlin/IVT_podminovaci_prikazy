@@ -12,6 +12,7 @@ namespace IVT_podminovaci_prikazy
         public void Vypocet()
         {
             Console.WriteLine("Zadejte strany a, b, c");
+            //takhle by to vypadalo kdybych si neudělal classu na vstupy a musel bych to pokaždé vypsat
             
             /*while (!float.TryParse(Console.ReadLine(), out _a))
                 Console.WriteLine("Neplatné číslo, zadejte prosím znovu:");
@@ -20,6 +21,7 @@ namespace IVT_podminovaci_prikazy
             while (!float.TryParse(Console.ReadLine(), out _c))
                 Console.WriteLine("Neplatné číslo, zadejte prosím znovu:");*/
             
+            //jednoduché použití pomocí jíné methody classy
             _a = Test();
             _b = Test();
             _c = Test();

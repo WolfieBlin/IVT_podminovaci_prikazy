@@ -5,6 +5,9 @@ namespace IVT_podminovaci_prikazy
 {
     public class KvadratickaRovnice : Vstupy, ILinearniRovniceVypocet
     {
+        //musel jsem pomocí dědičnosti implmentovat dvě classy, ale c# podporuje jen jednu, proto se musí použít interface
+        
+        //příkaz pro interface
         private ILinearniRovniceVypocet _vypocet = new LinearniRovnice();
         
         private double _a;
@@ -28,6 +31,7 @@ namespace IVT_podminovaci_prikazy
             
             if (_a == 0)
             {
+                // vyvolá interface classy linearni rovnice  metodu pro vypočet
                 Vypocet(_b, _c);
             }
             else if (_diskriminant > 0)
@@ -47,6 +51,7 @@ namespace IVT_podminovaci_prikazy
             }
         }
 
+        // interface 
         public void Vypocet(double a, double b)
         {
             _vypocet.Vypocet(a,b);

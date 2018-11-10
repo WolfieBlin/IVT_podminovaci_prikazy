@@ -5,10 +5,14 @@ namespace IVT_podminovaci_prikazy
 {
     public class Kvadranty : Vstupy
     {
+        // nahoře se se přiřazují hodnoty se kterými se bude pracovat, deklarace proměných se většinou nedává do metod
+        // káždý private prvek se označuje podržítkem před jménem, je to konvence
+        
         private double _x;
         private double _y;
-        private byte kvadrant;
+        private byte _kvadrant;
         
+        //metoda která používá pomocí dědičnosti kontrolu vstupu a ukládá jí do privátní proměné této cllasy se kterou potom pracuje
         public void Vypocet()
         {
             Console.WriteLine("Zadejte souřadnice bodu X a Y");
@@ -20,27 +24,27 @@ namespace IVT_podminovaci_prikazy
             {
                 if (_y > 0)
                 {
-                    kvadrant = 1;
+                    _kvadrant = 1;
                 }
                 else
                 {
-                    kvadrant = 4;
+                    _kvadrant = 4;
                 }
             }
             else
             {
                 if (_y > 0)
                 {
-                    kvadrant = 2;
+                    _kvadrant = 2;
                 }
                 else
                 {
-                    kvadrant = 3;
+                    _kvadrant = 3;
                 }
 
             }
 
-            Console.WriteLine("Bod se nachází v {0}. kvadrantu", kvadrant);
+            Console.WriteLine("Bod se nachází v {0}. kvadrantu", _kvadrant);
             
         }
     }
